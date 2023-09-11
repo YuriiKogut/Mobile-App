@@ -1,0 +1,15 @@
+body, input, textarea {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-style: normal;
+}
+
+
+
+.container {
+    width: 320px;
+}
+
+.list {
+    list-style-type: none;
+}
