@@ -14,7 +14,7 @@
     <header class="header">
         <nav class="header-nav">
         <span class="header-logo">Mobileapp</span>
-        <ul class="header-ul">
+        <ul class="header-ul list">
             <li class="header-li">HOME</li>
             <li class="header-li">FEATURES</li>
             <li class="header-li">TEAM</li>
@@ -25,12 +25,12 @@
         <div class="header-main">
             <h1 class="hero-title">Introducing Mobileapp</h1>
             <h2 class="hero-title-paragraph">Download our mobile app today!</h2>
-            <ul class="hero-ul">
+            <ul class="hero-ul list">
                 <li class="hero-li">Real-time updates and notifications for timely information</li>
                 <li class="hero-li">Robust analytics and reporting for data-driven insights</li>
                 <li class="hero-li">Offline capabilities for uninterrupted use</li>
             </ul>
-            <button class="btn-download">Download</button>
+            <button class="modal-btn-open" data-modal-open>Download</button>
         </div>
         <button class="js-open-menu">
             <svg class="open-svg">
@@ -45,8 +45,8 @@
             </button>
             <nav class="header-nav-mobile">
             <span class="header-logo-mobile">Mobileapp</span>
-            <ul class="header-ul-mobile">
-                <li class="header-li-mobile">HOME</li>
+            <ul class="header-ul-mobile list">
+                <li class="header-li-mobile-home">HOME</li>
                 <li class="header-li-mobile">FEATURES</li>
                 <li class="header-li-mobile">TEAM</li>
                 <li class="header-li-mobile">TESTIMONIALS</li>
@@ -58,7 +58,7 @@
     <!-- MAIN -->
     <main>
         <!-- KEY FEATURES -->
-        <section class="features-section">
+        <section class="features">
             <h2 class="features-title">FEATURES</h2>
             <p class="features-paragraph">
                 Get the best mobile experience with our Mobileapp. With a user-friendly interface, personalized recommendations, secure
@@ -67,7 +67,7 @@
             <img class="features-main-img" src="images/" 
                 srcset="images/.jpg 1x, images/.jpg 2x" alt="">
             <div class="features-advantages">
-                <ul class="features-advantages-ul">
+                <ul class="features-advantages-ul list">
                     <li class="features-advantages-li">
                         <img class="features-advantages-img" src="images/" 
                             srcset="images/.jpg 1x, images/.jpg 2x" alt="">
@@ -113,7 +113,7 @@
             </div>
         </section>
         <!-- VIDEO -->
-        <section class="video-section">
+        <section class="video">
             <div class="video-main">
             <h2 class="video-">WATCH THE VIDEO</h2>
             <p class="video-">Watch the video below to see our mobile app in action. With a user-friendly interface, personalized recommendations,
@@ -139,7 +139,7 @@
             <p class="team-paragraph">Our team is made up of talented and passionate individuals who are committed to providing the best experience for our
             users. Each member brings a unique set of skills and expertise to the table, allowing us to work collaboratively and
             effectively to achieve our goals.</p>
-            <ul class="team-ul">
+            <ul class="team-ul list">
                 <li class="team-li">
                     <img class="team-member-img" src="images/" 
                         srcset="images/.jpg 1x, images/.jpg 2x" alt="">
@@ -166,7 +166,7 @@
                 </li>
             </ul>
         </section>
-        <!-- Testimonials -->
+        <!-- TESTEMONIALS -->
         <section class="testimonials">
             <h2 class="testimonials-title">WHAT OUR COSTUMER’S SAY</h2>
             <img class="testimonials-img" src="images/" 
@@ -225,5 +225,172 @@
         <footer class="footer">
             <p class="footer-paragraph">© 2019 GoIteens Template. All Rights Reserved</p>
         </footer>
+        <!-- MODAL WINDOW -->
+<div class="backdrop" data-modal>
+    <div class="modal">
+        <button class="modal-btn-close" data-modal-close>
+            <svg>
+                <use href="./images/icons.svg#"></use>
+            </svg>
+        </button>
+    <div class="modal-main-content">
+        <h3>Download</h3>
+        <div class="modal-plan-one">
+            <svg class="modal-plan-icon-main">
+                <use href="./images/icons.svg#"></use>
+            </svg>
+            <h4 class="modal-plan-title">Download free plan</h4>
+            <ul class="modal-plan-list list">
+                <li class="modal-plan-item">
+                    <svg>
+                        <use href="./images/icons.svg#"></use>
+                    </svg>
+                    <p class="modal-plan-paragraph">Basic functionality</p>
+                </li>
+                <li class="modal-plan-item">
+                    <svg>
+                        <use href="./images/icons.svg#"></use>
+                    </svg>
+                    <p class="modal-plan-paragraph">Limited access</p>
+                </li>
+                <li class="modal-plan-item">
+                    <svg>
+                        <use href="./images/icons.svg#"></use>
+                    </svg>
+                    <p class="modal-plan-paragraph">Community support</p>
+                </li>
+            </ul>
+        </div>
+        <div class="modal-plan-two">
+            <svg  class="modal-plan-icon-main">
+                <use href="./images/icons.svg#"></use>
+            </svg>
+            <h4 class="modal-plan-title">Download for 20$</h4>
+            <ul class="modal-plan-list list">
+                <li class="modal-plan-item">
+                    <svg>
+                        <use href="./images/icons.svg#"></use>
+                    </svg>
+                    <p class="modal-plan-paragraph">Ad-free experience</p>
+                </li>
+                <li class="modal-plan-item">
+                    <svg>
+                        <use href="./images/icons.svg#"></use>
+                    </svg>
+                    <p class="modal-plan-paragraph">Unlock exclusive features</p>
+                </li>
+                <li class="modal-plan-item">
+                    <svg>
+                        <use href="./images/icons.svg#"></use>
+                    </svg>
+                    <p class="modal-plan-paragraph">Content for the ultimate mobile experience</p>
+                </li>
+            </ul>
+        </div>
+        <p class="modal-paragraph">No matter which plan you choose, we're excited to have you as part of our community of mobile app users!</p>
+        <div class="modal-about">
+            <div class="modal-about-one">
+                <ul class="modal-about-list list">
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">App name</h4>
+                        <p class="modal-about-paragraph">Mobileapp.layout</p>
+                        </div>
+                    </li>
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">License</h4>
+                        <p class="modal-about-paragraph">Free</p>
+                        </div>
+                    </li>
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">Author</h4>
+                        <p class="modal-about-paragraph">Mobile Marrket App.com</p>
+                        </div>
+                    </li>
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">Data</h4>
+                        <p class="modal-about-paragraph">21.02.2022</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-about-two">
+                <ul class="modal-about-list list">
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">OC</h4>
+                        <p class="modal-about-paragraph">Windows</p>
+                        </div>
+                    </li>
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">Language</h4>
+                        <p class="modal-about-paragraph">English</p>
+                        </div>
+                    </li>
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">Size</h4>
+                        <p class="modal-about-paragraph">4.16 MB</p>
+                        </div>
+                    </li>
+                    <li class="modal-about-item">
+                        <div class="modal-about-icon">
+                            <svg>
+                                <use href="./images/icons.svg#"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-about-text">
+                        <h4 class="modal-about-title">Downloads</h4>
+                        <p class="modal-about-paragraph">964</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="modal-btn-download">Download</button>
+    </div>
+    </div>
+</div>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
