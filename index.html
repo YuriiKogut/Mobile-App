@@ -15,105 +15,161 @@
         <nav class="header-nav">
         <span class="header-logo">Mobileapp</span>
         <ul class="header-ul list">
-            <li class="header-li">HOME</li>
+            <li class="header-li"><a href="">HOME</a></li>
             <li class="header-li">FEATURES</li>
             <li class="header-li">TEAM</li>
             <li class="header-li">TESTIMONIALS</li>
             <li class="header-li">CONTACT</li>
         </ul>
+        <button class="js-open-menu">
+            <svg class="open-svg" width="24" height="14">
+                <use href="./images/icons.svg#icon-Burger"></use>
+            </svg>
+        </button>
         </nav>
-        <div class="header-main">
+        <div class="header-main container">
             <h1 class="hero-title">Introducing Mobileapp</h1>
             <h2 class="hero-title-paragraph">Download our mobile app today!</h2>
             <ul class="hero-ul list">
-                <li class="hero-li">Real-time updates and notifications for timely information</li>
-                <li class="hero-li">Robust analytics and reporting for data-driven insights</li>
-                <li class="hero-li">Offline capabilities for uninterrupted use</li>
+                <li class="hero-li">
+                    <svg class="arrow-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                    <p class="hero-item-paragraph">Real-time updates and notifications for timely information</p>
+                </li>
+                <li class="hero-li">
+                    <svg class="arrow-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                    <p class="hero-item-paragraph">Robust analytics and reporting for data-driven insights</p>
+                </li>
+                <li class="hero-li">
+                    <svg class="arrow-svg" width="18" height="18">
+                        <use href="./images/icons.svg#icon-arrow-right"></use>
+                    </svg>
+                    <p class="hero-item-paragraph">Offline capabilities for uninterrupted use</p>
+                </li>
             </ul>
             <button class="modal-btn-open" data-modal-open>Download</button>
         </div>
-        <button class="js-open-menu">
-            <svg class="open-svg">
-                <use href="./images/icons.svg#"></use>
-            </svg>
-        </button>
-        <div class="js-menu-container">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu">
+            <nav class="header-nav-mobile">
+            <div class="header-nav-logo">
+            <span class="header-logo-mobile">Mobileapp</span>
             <button class="js-close-menu">
-                <svg class="close-icon">
-                    <use href="./images/icons.svg#"></use>
+                <svg class="close-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-ep_close"></use>
                 </svg>
             </button>
-            <nav class="header-nav-mobile">
-            <span class="header-logo-mobile">Mobileapp</span>
+            </div>
             <ul class="header-ul-mobile list">
-                <li class="header-li-mobile-home">HOME</li>
-                <li class="header-li-mobile">FEATURES</li>
-                <li class="header-li-mobile">TEAM</li>
-                <li class="header-li-mobile">TESTIMONIALS</li>
-                <li class="header-li-mobile">CONTACT</li>
+                <li class="header-li-mobile-home"><a href="">HOME</a></li>
+                <li class="header-li-mobile"><a href="">FEATURES</a></li>
+                <li class="header-li-mobile"><a href="">TEAM</a></li>
+                <li class="header-li-mobile"><a href="">TESTIMONIALS</a></li>
+                <li class="header-li-mobile"><a href="">CONTACT</a></li>
             </ul>
             </nav>
+        </div>
         </div>
     </header>
     <!-- MAIN -->
     <main>
         <!-- KEY FEATURES -->
-        <section class="features">
-            <h2 class="features-title">FEATURES</h2>
+        <section class="features container">
+            <h2 class="features-title">KEY FEATURES</h2>
             <p class="features-paragraph">
                 Get the best mobile experience with our Mobileapp. With a user-friendly interface, personalized recommendations, secure
                 transactions, and real-time updates, our app offers everything you need to stay connected and productive
             </p>
-            <img class="features-main-img" src="images/" 
-                srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+            <div class="features-svg" >
+                <svg>
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+                <svg>
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+                <svg>
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+                <svg>
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+                <svg>
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+                <svg>
+                    <use href="./images/icons.svg#"></use>
+                </svg>
+            </div>
+            <img class="features-main-img" src="./images/25_low 1.jpg" alt="">
             <div class="features-advantages">
                 <ul class="features-advantages-ul list">
                     <li class="features-advantages-li">
-                        <img class="features-advantages-img" src="images/" 
-                            srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-                        <h3 class="features-advantages-title">User-Friendly Interface:</h3>
-                        <p class="features-advantages-paragraph">Intuitive and easy-to-navigate interface designed to provide a seamless mobile experience for users.</p>
+                        <div>
+                            <img class="features-advantages-img" src="./images/07 Gear NFT.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="features-advantages-title">User-Friendly Interface:</h3>
+                            <p class="features-advantages-paragraph">Intuitive and easy-to-navigate interface designed to provide a seamless mobile experience for users.</p>
+                        </div>
                     </li>
                     <li class="features-advantages-li">
-                        <img class="features-advantages-img" src="images/" 
-                            srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-                        <h3 class="features-advantages-title">Personalized Recommendations:</h3>
-                        <p class="features-advantages-paragraph">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-                        diam a iaculis malesuada</p>
+                        <div>
+                            <img class="features-advantages-img" src="./images/07 Gear NFT.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="features-advantages-title">Personalized Recommendations:</h3>
+                            <p class="features-advantages-paragraph">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                            diam a iaculis malesuada</p>
+                        </div>
                     </li>
                     <li class="features-advantages-li">
-                        <img class="features-advantages-img" src="images/" 
-                            srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-                        <h3 class="features-advantages-title">Real-Time Updates:</h3>
-                        <p class="features-advantages-paragraph">Users receive real-time updates and notifications to stay informed on important news and events, and to stay up-to-date
-                        with changes to the app.</p>
+                        <div>
+                            <img class="features-advantages-img" src="./images/07 Gear NFT.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="features-advantages-title">Real-Time Updates:</h3>
+                            <p class="features-advantages-paragraph">Users receive real-time updates and notifications to stay informed on important news and events, and to stay up-to-date
+                            with changes to the app.</p>
+                        </div>
                     </li>
                     <li class="features-advantages-li">
-                        <img class="features-advantages-img" src="images/" 
-                            srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-                        <h3 class="features-advantages-title">Integration with Other Apps:</h3>
-                        <p class="features-advantages-paragraph">The app integrates with other popular apps, making it easy for users to connect with their social media accounts, or to
-                        easily make in-app purchases using their preferred payment method.</p>
+                        <div>
+                            <img class="features-advantages-img" src="./images/07 Gear NFT.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="features-advantages-title">Integration with Other Apps:</h3>
+                            <p class="features-advantages-paragraph">The app integrates with other popular apps, making it easy for users to connect with their social media accounts, or to
+                            easily make in-app purchases using their preferred payment method.</p>
+                        </div>
                     </li>
                     <li class="features-advantages-li">
-                        <img class="features-advantages-img" src="images/" 
-                            srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-                        <h3 class="features-advantages-title">Multi-Language Support:</h3>
-                        <p class="features-advantages-paragraph">The app is designed to be accessible to users all around the world, with support for multiple languages, making it
-                        easier for people to use the app in their native language.</p>
+                        <div>
+                            <img class="features-advantages-img" src="./images/07 Gear NFT.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="features-advantages-title">Multi-Language Support:</h3>
+                            <p class="features-advantages-paragraph">The app is designed to be accessible to users all around the world, with support for multiple languages, making it
+                            easier for people to use the app in their native language.</p>
+                        </div>
                     </li>
                     <li class="features-advantages-li">
-                        <img class="features-advantages-img" src="images/" 
-                            srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-                        <h3 class="features-advantages-title">Offline Capabilities:</h3>
-                        <p class="features-advantages-paragraph">The app offers offline capabilities, allowing users to access certain features and content even when they are not
-                        connected to the internet.</p>
+                        <div>
+                            <img class="features-advantages-img" src="./images/07 Gear NFT.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="features-advantages-title">Offline Capabilities:</h3>
+                            <p class="features-advantages-paragraph">The app offers offline capabilities, allowing users to access certain features and content even when they are not
+                            connected to the internet.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- VIDEO -->
-        <section class="video">
+        <section class="video container">
             <div class="video-main">
             <h2 class="video-">WATCH THE VIDEO</h2>
             <p class="video-">Watch the video below to see our mobile app in action. With a user-friendly interface, personalized recommendations,
@@ -127,50 +183,43 @@
             </svg>
             </div>
             <div class="phone-video">
-            <img class="phone-video-img" src="images/" 
-                srcset="images/.jpg 1x, images/.jpg 2x" alt="">
-            <img class="display-video-img" src="images/" 
-                srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+            <img class="phone-video-img" src="images/" alt="">
+            <img class="display-video-img" src="images/" alt="">
             </div>
         </section>
         <!-- OUR TEAM -->
-        <section class="team">
+        <section class="team container">
             <h2 class="team-title">OUR TEAM</h2>
             <p class="team-paragraph">Our team is made up of talented and passionate individuals who are committed to providing the best experience for our
             users. Each member brings a unique set of skills and expertise to the table, allowing us to work collaboratively and
             effectively to achieve our goals.</p>
             <ul class="team-ul list">
                 <li class="team-li">
-                    <img class="team-member-img" src="images/" 
-                        srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+                    <img class="team-member-img" src="images/" alt="">
                     <h3 class="team-member-name">David Patel</h3>
                     <p class="team-member-post">Managing Direcor</p>
                 </li>
                 <li class="team-li">
-                    <img class="team-member-img" src="images/" 
-                        srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+                    <img class="team-member-img" src="images/" alt="">
                     <h3 class="team-member-name">Rachel Kim</h3>
                     <p class="team-member-post">Lead Designer</p>
                 </li>
                 <li class="team-li">
-                    <img class="team-member-img" src="images/" 
-                        srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+                    <img class="team-member-img" src="images/" alt="">
                     <h3 class="team-member-name">Samantha Chen</h3>
                     <p class="team-member-post">Lead Developer</p>
                 </li>
                 <li class="team-li">
-                    <img class="team-member-img" src="images/" 
-                        srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+                    <img class="team-member-img" src="images/" alt="">
                     <h3 class="team-member-name">Andrew Nguyen</h3>
                     <p class="team-member-post">Sr. UI Designer</p>
                 </li>
             </ul>
         </section>
         <!-- TESTEMONIALS -->
-        <section class="testimonials">
+        <section class="testimonials container">
             <h2 class="testimonials-title">WHAT OUR COSTUMER’S SAY</h2>
-            <img class="testimonials-img" src="images/" 
-                srcset="images/.jpg 1x, images/.jpg 2x" alt="">
+            <img class="testimonials-img" src="images/" alt="">
             <h3 class="testimonials-name">Jon Doe</h3>
             <p class="testimonials-comp">Company Inc.</p>
             <p class="testimonials-about">I've been using this app for a few weeks now and I have to say, I'm really impressed. It's so easy to use and the
@@ -181,7 +230,7 @@
             </svg>
         </section>
         <!-- CONTACT -->
-        <section class="contact">
+        <section class="contact container">
         <div class="contact-content">
             <h2 class="contact-title">CONTACT US</h2>
             <div class="contact-div-form">
@@ -226,7 +275,7 @@
             <p class="footer-paragraph">© 2019 GoIteens Template. All Rights Reserved</p>
         </footer>
         <!-- MODAL WINDOW -->
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal-btn-close" data-modal-close>
             <svg>

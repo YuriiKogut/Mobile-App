@@ -4,10 +4,31 @@ body, input, textarea {
     font-style: normal;
 }
 
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
 
 
 .container {
-    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 480px;
 }
 
 .list {
@@ -17,19 +38,26 @@ body, input, textarea {
 /* HEADER */
 
 .header {
-
+    padding-top: 20px;
+    color: #ffffff;
+    background: #06071B;
 }
 
 .header-nav {
-
+    padding-left: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(0, 197, 235, 0.30) -1.97%, rgba(181, 68, 254, 0.30) 89.43%);
 }
 
-.header-logo {
-
+.header-logo, .header-logo-mobile {
+    font-size: 28px;
+    font-weight: 400;
 }
 
 .header-ul {
-
+    display: none;
 }
 
 .header-li {
@@ -37,43 +65,108 @@ body, input, textarea {
 }
 
 .header-main {
-
+    padding-top: 100px;
+    padding-bottom: 127px;
 }
 
 .hero-title {
-
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .hero-title-paragraph {
-
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .hero-ul {
-
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .hero-li {
+    display: flex;
+    gap: 4px;
+}
 
+.arrow-svg {
+    width: 18px;
+    height: 18px;
+}
+
+.hero-item-paragraph {
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .modal-btn-open {
-
+    width: 200px;
+    height: 42px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-right: 60px;
+    padding-left: 61px;
+    margin-top: 40px;
+    margin-right: 60px;
+    margin-left: 60px;
+    
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background: var(--LINEAR, linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%));
 }
 
 .js-open-menu {
-
+    margin-right: 20px;
+    border: 0;
+    background-color: rgba(181, 68, 254, 0);
+    margin-left: auto;
 }
 
-.open-svg {
+.is-open {
+    transform: translateX(0);
+}
 
+.menu-container {
+    background: #07081C;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.mobile-menu {
+    
+    
+    
 }
 
 .js-menu-container {
+}
 
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.header-nav-logo {
+    display: flex;
 }
 
 .js-close-menu {
-
+    padding: 0;
+    background-color: rgba(0, 197, 235, 0);
+    border: 0;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .close-icon {
@@ -81,19 +174,28 @@ body, input, textarea {
 }
 
 .header-nav-mobile {
-
-}
-
-.header-logo-mobile {
-
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 20px 20px;
 }
 
 .header-ul-mobile {
-
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .header-li-mobile-home {
-
+    background: var(--LINEAR, linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header-li-mobile {
@@ -103,18 +205,31 @@ body, input, textarea {
 /* KEY FEATURES */
 
 .features {
-
+    color: #000000;
 }
 
 .features-title {
-
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .features-paragraph {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42;
+}
 
+.features-svg {
+    width: 0;
+    height: 0;
 }
 
 .features-main-img {
+    width: 280px;
 
 }
 
@@ -127,7 +242,9 @@ body, input, textarea {
 }
 
 .features-advantages-li {
-
+    margin-top: 39px;
+    display: flex;
+    gap: 12px;
 }
 
 .features-advantages-img {
@@ -135,11 +252,16 @@ body, input, textarea {
 }
 
 .features-advantages-title {
-
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.42;
 }
 
 .features-advantages-paragraph {
-
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* VIDEO */
@@ -310,8 +432,19 @@ body, input, textarea {
 
 /* MODAL WINDOW */
 
-.backdrop {
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
+.backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -396,4 +529,12 @@ body, input, textarea {
 
 .modal-btn-download {
 
+}
+
+/* ADAPTATION */
+
+@media screen and (min-width: 768px) {
+    .header-ul {
+        
+    }
 }
