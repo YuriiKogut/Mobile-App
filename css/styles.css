@@ -4,6 +4,12 @@ body, input, textarea {
     
 }
 
+svg path {
+    stroke: inherit;
+    stroke-width: inherit;
+    fill: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,14 +30,61 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
-button:hover {
-    border-radius: 5px;
-    border: 1px solid var(--LINEAR, #00C5EB);
-    background: #06071B;
+.svg-arrow-modal, .modal-plan-icon-main, .svg-about, .modal-btn-close, .close-icon {
+    fill: #ffffff;
 }
 
-svg:hover {
-    background-color: rgb(0, 194, 232, 0);
+.close-icon {
+    transition: all 200ms ease;
+}
+
+.close-icon:active {
+    border-radius: 3px;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 1px #B544FE;
+}
+
+.modal-btn-download,.btn-submit,.modal-btn-open, .modal-btn-close{
+    transition: all 300ms ease;
+}
+
+.modal-btn-close:hover {
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 1px #B544FE;
+    transform: scale(150%);
+}
+
+.modal-btn-download:hover,
+.modal-btn-open:hover,
+.btn-submit:hover {
+    box-shadow: 0px 0px 0px 2px #B544FE;
+    background: rgb(0, 194, 232, 0);
+}
+
+.svg-apple {
+    overflow: visible;
+    transition: all .2s ease;
+    fill: rgb(255, 255, 255);
+}
+
+
+.svg-android {
+    transition: all .2s ease;
+    fill: rgb(255, 255, 255);
+}
+
+.svg-apple:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 1px #B544FE;
+    background: rgb(0, 194, 232, 0);
+    fill: transparent;
+    stroke: var(--LINEAR, #00C5EB);
+}
+
+.svg-android:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 1px #B544FE;
+    background: rgb(0, 194, 232, 0);
     fill: transparent;
     stroke: var(--LINEAR, #00C5EB);
 }
@@ -66,6 +119,8 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 /* HEADER */
 
 .header {
+    max-width: 520px;
+    margin: 0 auto;
     padding-top: 20px;
     color: #ffffff;
     background: linear-gradient(190deg, rgb(0, 42, 54), rgb(2, 0, 28), rgb(25, 0, 50));
@@ -121,6 +176,7 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .arrow-svg {
+    fill: #ffffff;
     flex-shrink: 0;
     width: 18px;
     height: 18px;
@@ -132,6 +188,8 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .modal-btn-open {
+    background-size: 100% 100%;
+    transition: all 200ms ease;
     text-align: center;
     width: 200px;
     height: 42px;
@@ -144,6 +202,12 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     border-radius: 5px;
     color: #ffffff;
     background: var(--LINEAR, linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%));
+}
+
+.modal-btn-open:hover {
+    margin-left:32px;
+    transform: scale(1.2, 1.2);
+    background: rgb(0, 194, 232, 0);
 }
 
 .js-open-menu {
@@ -169,15 +233,6 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     transition: transform 250ms ease-in-out;
 }
 
-.mobile-menu {
-    
-    
-    
-}
-
-.js-menu-container {
-}
-
 .menu-container.is-open {
     transform: translateX(0);
 }
@@ -191,10 +246,6 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     background-color: rgba(0, 197, 235, 0);
     border: 0;
     margin-left: auto;
-}
-
-.close-icon {
-
 }
 
 .header-nav-mobile {
@@ -330,13 +381,14 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .video-svg-apple {
-    padding-bottom: 13px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .svg-android {
+    position: relative;
     width: 60px;
     height: 60px;
     background: var(--LINEAR, linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%));
@@ -344,10 +396,10 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .video-svg-android {
-    padding-bottom: 12px;
-    padding-top: 12px;
-    padding-left: 14px;
-    padding-right: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .phone-video {
@@ -510,6 +562,7 @@ margin-top: 40px;
 }
 
 .contact-form {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -545,6 +598,7 @@ margin-top: 40px;
 }
 
 .btn-submit {
+    transition: all .2s ease;
     text-align: center;
     font-family: 'Inter';
     font-size: 16px;
@@ -555,6 +609,11 @@ margin-top: 40px;
     color: #ffffff;
     border-radius: 5px;
     background: linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%);
+}
+
+.btn-submit:hover {
+    transform: scale(1.2, 1.2);
+    background: rgb(0, 194, 232, 0);
 }
 
 .contact-link {
@@ -583,12 +642,22 @@ margin-top: 40px;
 }
 
 .svg-social {
+    transition: all 300ms ease;
+    fill: #ffffff;
     width: 40px;
     height: 40px;
     background: var(--LINEAR, linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%));
     border-radius: 50%;
     display: flex;
     justify-content: center;
+}
+
+.svg-social:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 0px 1px #B544FE;
+    background: rgb(0, 194, 232, 0);
+    fill: transparent;
+    stroke: var(--LINEAR, #00C5EB);
 }
 
 .svg-social-item {
@@ -799,6 +868,7 @@ margin-top: 40px;
 }
 
 .modal-btn-download {
+    transition: all .2s ease;
     margin: 0 auto;
     color: #ffffff;
     width: 232px;
@@ -812,6 +882,11 @@ margin-top: 40px;
     margin-top: 20px;
     font-size: 16px;
     font-weight: 700;
+}
+
+.modal-btn-download:hover {
+    padding: 30px 50px;
+    transform: scale(1.2, 1.2);
 }
 
 /* ADAPTATION */
@@ -843,6 +918,13 @@ margin-top: 40px;
     width: 233px;
 }
 
+.modal-border {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 73px;
+    padding-top: 0px;
+}
+
 .modal-about {
     display: flex;
     gap: 2px;
@@ -865,6 +947,11 @@ margin-top: 40px;
     max-width: 970px;
     padding-left: 32px;
     padding-right: 32px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 1034px;
     margin: 0 auto;
 }
 
@@ -1098,6 +1185,7 @@ height: 184px;
 }
 
 .contact-form {
+    width: 720px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px 32px;
@@ -1187,7 +1275,7 @@ height: 184px;
 }
 
 .header {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -1338,6 +1426,8 @@ height: 184px;
     width: 598px;
 }
 
-.btn-submit {}
+.btn-submit:hover {
+    transform: scale(1.1, 1.1);
+}
 
 }
