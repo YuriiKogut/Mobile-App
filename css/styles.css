@@ -143,10 +143,6 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     display: none;
 }
 
-.header-li {
-
-}
-
 .header-main {
     padding-top: 100px;
     padding-bottom: 127px;
@@ -756,8 +752,7 @@ margin-top: 40px;
 
 .modal-plan-icon-main {
     display: flex;
-    margin: 0 auto;
-    margin-top: 28px;
+    margin: 28px auto 0 auto;
 }
 
 .modal-plan-title {
