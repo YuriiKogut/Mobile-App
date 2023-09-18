@@ -1,7 +1,6 @@
 body, input, textarea {
     font-family: 'Inter', sans-serif;
     color: black;
-    
 }
 
 svg path {
@@ -119,11 +118,47 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 /* HEADER */
 
 .header {
+    position: relative;
     max-width: 520px;
     margin: 0 auto;
     padding-top: 20px;
     color: #ffffff;
     background: linear-gradient(190deg, rgb(0, 42, 54), rgb(2, 0, 28), rgb(25, 0, 50));
+    overflow: hidden;
+}
+
+
+
+.header-images {
+
+}
+
+.img-phone {
+    position: absolute;
+    opacity: 0.5;
+    width: 422px;
+    height: 456px;
+    top: 92px;
+    left: 43px;
+}
+
+.img-display {
+    position: absolute;
+    opacity: 0.5;
+    width: 395px;
+    height: 430px;
+    top: 92px;
+    left: 43px;
+}
+
+.img-shadow {
+    position: absolute;
+    width: 394px;
+    height: 391px;
+}
+
+.img-items {
+    display: none;
 }
 
 .header-nav {
@@ -144,6 +179,9 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .header-main {
+    overflow: visible;
+    position: relative;
+    z-index: 2;
     padding-top: 100px;
     padding-bottom: 127px;
 }
@@ -298,9 +336,102 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .features-main-img {
+    position: relative;
+    z-index: 10;
     width: 280px;
     height: 406px;
     margin-top: 20px;
+}
+
+.features-advantages {
+    position: relative;
+}
+
+.svg-one {
+    width: 183px;
+    height: 390px;
+    position: absolute;
+    top: 24px;
+    left: -13px;
+    z-index: 1;
+}
+
+.svg-two {
+    width: 183px;
+    height: 401px;
+    position: absolute;
+    stroke-width: 0.18px;
+        stroke: #262626;
+    top: 20px;
+    left: -9px;
+    z-index: 2;
+}
+
+.svg-three {
+    width: 159.894px;
+    height: 375.914px;
+    position: absolute;
+    stroke-width: 0.18px;
+    stroke: #262626;
+    top: 33px;
+    left: 2px;
+    z-index: 3;
+}
+
+.svg-four {
+    width: 159.894px;
+    height: 375.914px;
+    fill: #5300A6;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 33px;
+    left: 2px;
+    z-index: 4;
+}
+
+.svg-five {
+    width: 45px;
+    height: 6.5px;
+    fill: #FFF;
+    stroke-width: 0.2px;
+    stroke: #262626;
+    position: absolute;
+    top: 38px;
+    left: 60px;
+    z-index: 5;
+}
+
+.svg-six {
+    width: 7px;
+    height: 7px;
+    fill: #FFF;
+    stroke-width: 0.2px;
+    stroke: #262626;
+    position: absolute;
+    top: 38.5px;
+    left: 57.5px;
+    z-index: 6;
+}
+
+.svg-seven {
+    width: 35px;
+    height: 38px;
+    position: absolute;
+    fill: transparent;
+    stroke-width: 9px;
+    stroke: #000000;
+    top: 90px;
+    left: 40px;
+    z-index: 7;
+}
+
+.svg-eight {
+    width: 36px;
+    height: 42px;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    z-index: 8;
 }
 
 .features-advantages-li {
@@ -704,6 +835,7 @@ margin-top: 40px;
 }
 
 .backdrop {
+    z-index: 1000;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -946,8 +1078,107 @@ margin-top: 40px;
 }
 
 .header {
+    overflow: visible;
     max-width: 1034px;
     margin: 0 auto;
+}
+
+.img-items {
+    overflow: hidden;
+    display: flex;
+}
+
+.neon {
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+    opacity: 1;
+    fill: rgb(0, 197, 235, 0.8);
+    filter: blur(100px);
+}
+
+.img-items-one {
+    position: absolute;
+    width: 77px;
+    height: 76px;
+    top: 228px;
+    left: 484px;
+}
+
+.img-items-two {
+    position: absolute;
+    width: 76px;
+    height: 80px;
+    top: 258px;
+    left: 419px;
+}
+
+.img-items-three {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 321px;
+    left: 408px;
+}
+
+.img-items-four {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 341px;
+    left: 308px;
+}
+
+.img-items-five {
+    position: absolute;
+    width: 84px;
+    height: 100px;
+    top: 421px;
+    left: 293px;
+}
+
+.img-items-six {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 441px;
+    left: 199px;
+}
+
+.img-items-seven {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 520px;
+    left: 224px;
+}
+
+.img-phone {
+    position: absolute;
+    opacity: 1;
+    width: 328px;
+    height: 350px;
+    top: 266px;
+    left: 408px;
+}
+
+.img-display {
+    position: absolute;
+    opacity: 1;
+    width: 307px;
+    height: 329px;
+    top: 266px;
+    left: 403px;
+}
+
+.img-shadow {
+    position: absolute;
+    top: 360px;
+    left: 415px;
+    width: 282px;
+    height: 280px;
 }
 
 .header-ul {
@@ -1006,8 +1237,65 @@ margin-top: 60px;
     line-height: 1.5;
 }
 
+.svg-one {
+    width: 266.934px;
+    height: 582.38px;
+    top: ;
+    left: -65px;
+}
+
+.svg-two {
+    width: 276px;
+    height: 592px;
+    top:;
+    left: -65px;
+}
+
+.svg-three {
+    width: 241.151px;
+    height: 554.965px;
+    top: ;
+    left:-50px;
+}
+
+.svg-four {
+    width: 241.151px;
+    height: 554.965px;
+    top: ;
+    left:-50px;
+}
+
+.svg-five {
+    width: 70.422px;
+    height: 10.123px;
+    top: ;
+    left: 35px;
+}
+
+.svg-six {
+    width: 11px;
+    height: 11px;
+    top: 38px;
+    left: 32px;
+}
+
+.svg-seven {
+    width: 42.587px;
+    height: 46.664px;
+    top: 100px;
+    left: 30px;
+}
+
+.svg-eight {
+    width: 54.827px;
+    height: 61.356px;
+    top: 500px;
+    left: -20px;
+}
+
 .features-main-img {
     margin: 0;
+    margin-bottom: 130px;
     width: 400px;
     height: 570px;
 }
@@ -1015,8 +1303,6 @@ margin-top: 60px;
 .features-advantages {
     margin: 0 auto;
     width: 710px;
-    align-items: center;
-    justify-content: center;
     display: flex;
     position: relative;
 }
