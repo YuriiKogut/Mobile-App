@@ -127,6 +127,10 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     overflow: hidden;
 }
 
+.header .menu-container {
+    overflow: visible;
+}
+
 
 
 .header-images {
