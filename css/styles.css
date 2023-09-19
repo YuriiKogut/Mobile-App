@@ -118,6 +118,7 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 /* HEADER */
 
 .header {
+    overflow: hidden;
     position: relative;
     max-width: 520px;
     margin: 0 auto;
@@ -125,10 +126,6 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     color: #ffffff;
     background: linear-gradient(190deg, rgb(0, 42, 54), rgb(2, 0, 28), rgb(25, 0, 50));
     
-}
-
-.header .menu-container {
-    overflow: visible;
 }
 
 .img-phone {
@@ -178,7 +175,6 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .header-main {
-    overflow: visible;
     position: relative;
     z-index: 2;
     padding-top: 100px;
