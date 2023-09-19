@@ -912,6 +912,8 @@ margin-top: 40px;
 }
 
 .modal-plan-two {
+    display: flex;
+    flex-direction: column;
     transition: all .5s ease;
     margin-top: 20px;
     background: linear-gradient(to right, #00C5EB -1.97%, #B544FE 89.43%);
