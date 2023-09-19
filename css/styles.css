@@ -50,7 +50,7 @@ h1, h2, h3, h4, p {
 .modal-btn-close:hover {
     border-radius: 3px;
     box-shadow: 0px 0px 0px 1px #B544FE;
-    transform: scale(150%);
+    transform: scale(1.5);
 }
 
 .modal-btn-download:hover,
@@ -127,12 +127,6 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     overflow: hidden;
 }
 
-
-
-.header-images {
-
-}
-
 .img-phone {
     position: absolute;
     opacity: 0.5;
@@ -152,6 +146,7 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .img-shadow {
+    display: none;
     position: absolute;
     width: 394px;
     height: 391px;
@@ -256,6 +251,7 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
 }
 
 .menu-container {
+    z-index: 1000;
     background: linear-gradient(190deg, rgb(25, 0, 50), rgb(2, 0, 28), rgb(0, 42, 54));
     position: fixed;
     height: 100%;
@@ -1174,6 +1170,7 @@ margin-top: 40px;
 }
 
 .img-shadow {
+    display: block;
     position: absolute;
     top: 360px;
     left: 415px;
@@ -1240,35 +1237,35 @@ margin-top: 60px;
 .svg-one {
     width: 266.934px;
     height: 582.38px;
-    top: ;
+    top: 20px;
     left: -65px;
 }
 
 .svg-two {
     width: 276px;
     height: 592px;
-    top:;
+    top: 20px;
     left: -65px;
 }
 
 .svg-three {
     width: 241.151px;
     height: 554.965px;
-    top: ;
+    top: 34px;
     left:-50px;
 }
 
 .svg-four {
     width: 241.151px;
     height: 554.965px;
-    top: ;
+    top: 34px;
     left:-50px;
 }
 
 .svg-five {
     width: 70.422px;
     height: 10.123px;
-    top: ;
+    top: 38px;
     left: 35px;
 }
 
@@ -1560,6 +1557,105 @@ height: 184px;
     margin: 0 auto;
 }
 
+.header-main {
+    padding-top: 145px;
+}
+
+.img-items-one {
+    position: absolute;
+    width: 77px;
+    height: 76px;
+    top: 261px;
+    left: 803px;
+}
+
+.img-items-two {
+    position: absolute;
+    width: 95px;
+    height: 100px;
+    top: 227px;
+    left: 685px;
+}
+
+.img-items-three {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 295px;
+    left: 644px;
+}
+
+.img-items-four {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 287px;
+    left: 517px;
+}
+
+.img-items-five {
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    top: 389px;
+    left: 472px;
+}
+
+.img-items-six {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 432px;
+    left: 339px;
+}
+
+.img-items-seven {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 565px;
+    left: 373px;
+}
+
+.neon {
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    top: 60px;
+    left: 850px;
+    opacity: 1;
+    fill: rgb(0, 197, 235, 0.8);
+    filter: blur(100px);
+}
+
+.img-phone {
+    position: absolute;
+    opacity: 1;
+    width: 459px;
+    height: 489px;
+    top: 222px;
+    left: 766px;
+}
+
+.img-display {
+    position: absolute;
+    opacity: 1;
+    width: 430px;
+    height: 460px;
+    top: 222px;
+    left: 758px;
+}
+
+.img-shadow {
+    opacity: 70%;
+    display: block;
+    position: absolute;
+    top: 353px;
+    left: 776px;
+    width: 394px;
+    height: 391px;
+}
+
 .features-paragraph {
     width: 855px;
     margin: 0 auto;
@@ -1579,6 +1675,62 @@ height: 184px;
     height: 600px;
     position: absolute;
     left: 460px;
+}
+
+.svg-one {
+    width: 266.934px;
+    height: 582.38px;
+    top: 20px;
+    left: 435px;
+}
+
+.svg-two {
+    width: 276px;
+    height: 592px;
+    top: 20px;
+    left: 435px;
+}
+
+.svg-three {
+    width: 241.151px;
+    height: 554.965px;
+    top: 34px;
+    left: 451px;
+}
+
+.svg-four {
+    width: 241.151px;
+    height: 554.965px;
+    top: 34px;
+    left: 451px;
+}
+
+.svg-five {
+    width: 70.422px;
+    height: 10.123px;
+    top: 38px;
+    left: 538px;
+}
+
+.svg-six {
+    width: 11px;
+    height: 11px;
+    top: 38px;
+    left: 535px;
+}
+
+.svg-seven {
+    width: 42.587px;
+    height: 46.664px;
+    top: 100px;
+    left: 510px;
+}
+
+.svg-eight {
+    width: 54.827px;
+    height: 61.356px;
+    top: 500px;
+    left: 470px;
 }
 
 .features-advantages-ul {
