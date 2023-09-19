@@ -922,6 +922,8 @@ margin-top: 40px;
 }
 
 .modal-border {
+    display: flex;
+    flex-direction: column;
     transition: all .5s ease;
     border-radius: 6px;
     background: #07081C;
