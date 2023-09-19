@@ -124,7 +124,11 @@ background: linear-gradient(135deg, rgb(0, 194, 232, 0.2), rgb(255, 255, 255), r
     padding-top: 20px;
     color: #ffffff;
     background: linear-gradient(190deg, rgb(0, 42, 54), rgb(2, 0, 28), rgb(25, 0, 50));
-    overflow: hidden;
+    
+}
+
+.header .menu-container {
+    overflow: visible;
 }
 
 .img-phone {
